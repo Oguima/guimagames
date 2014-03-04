@@ -1,0 +1,167 @@
+/*CSS base Bootstrap*/
+@import "../../sass/widget";
+
+$corazulbanca: rgb(42,165,212);
+
+#close-button {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2; }
+#close-button .face {
+   background-image: url(../images/close.png); 
+}
+
+/*caixas de texto, arredondadas.*/
+.caixaTexto
+{
+    position: absolute;
+    /*background-color: rgba(0,0,0,.75); 
+    color: white;*/    
+    /*background-color: rgb(241,195,0)*/ 
+    color: black;    
+    border-style: dotted;
+    border-color: rgb(39,156,207);
+    
+    /*filter: alpha(opacity = 50);*/
+    /*opacity: 0.5;*/
+	
+	@include border-radius(10);
+	@include box-sizing(border-box);
+    
+    padding: 4px;
+    /*margin-top: -35px;*/
+    
+    text-align: center;
+    display: block;
+}
+
+/*
+#jogo
+{
+    display: none;
+    position: absolute;
+    width: $width-maximo; 
+    height: $height-maximo;   
+
+    margin-top: -($height-maximo/2);
+    margin-left: -($width-maximo/2);
+        
+    left: 50%;
+    top:50%;    
+}
+*/
+
+/*Texto do rodape alinhado a esquerda: Fundo preto, letras brancas*/
+.rodape
+{
+    display:none;
+    position: absolute;    
+    background-color: black;
+    padding: 3px 10px;
+    color: white;
+    position: absolute;    
+    
+    right: 0px;
+    left: 0px; 
+    bottom:0px;
+    
+    font-size: 20px;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height:29px;
+    
+    text-align: left;
+    
+    z-index: 10;
+}
+
+#titulo
+{
+	position: absolute;
+    border-style: solid;
+    border-color: black;
+	
+	border-width: 1px;
+	
+	/*-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;*/
+	@include box-sizing(border-box);
+	
+    padding: 4px;
+	
+    /*margin-left: -290px;*/
+    
+	height: 38px;
+    width:400px;
+    top: 5px;
+    left: 160px;
+	
+	text-transform: uppercase;
+	background-color:white;
+	
+	z-index:10;
+}
+
+#mensagem
+{
+	position: absolute;
+	display:none;
+	top:460px;
+	left:30px;
+}
+
+
+.direitaesquerda{
+	@include animation('name', direitaesquerda);
+	@include animation('duration', 0.4s);
+	@include animation('direction', alternate);
+	@include animation('iteration-count', infinite);
+	@include animation('timing-function', ease-in-out);
+}
+
+@include keyframes(direitaesquerda)
+{
+	from {
+    left: 175px;
+  }
+
+  to {
+    left: 185px;
+  }
+}
+
+/*propriedades a animar... Ativa animacao, dar togle...*/
+.anima
+{
+	@include animation('name',animacao);
+	@include animation('duration',1s);
+	@include animation('timing-function',linear);
+	@include animation('iteration-count',1);
+	/*animation-direction: alternate;*/
+}
+
+@include keyframes(animacao)
+{
+	from { @include opacity(0);}
+	to   { @include opacity(1);}	
+}
+
+.escondeestados
+{
+	@include opacity(0.2);
+}
+
+.imagens
+{
+	display:none;
+	position: absolute;
+    width: 756px;
+    height: 748px;
+    margin-left: -(756/2);
+    left: 15%;
+    top:0px;	
+}
