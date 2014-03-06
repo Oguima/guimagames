@@ -165,3 +165,47 @@ $corazulbanca: rgb(42,165,212);
     left: 15%;
     top:0px;	
 }
+
+//.navbar-fixed-top
+//footer
+.jumbotron
+{
+  background: url(../images/fundoWeb.png) no-repeat center;
+}
+
+.imglogo
+{
+  background-size: contain;
+  width: 30px; height: 30px;
+}
+
+.logo:before
+{
+  background: url(../images/GuimaGamesLogo.jpg) no-repeat center;
+  background-size: contain;
+  width: 50px; height: 50px;
+  position: relative;
+  top: 35px;
+  left: -61px;
+  display: block;
+  content: '';
+}
+
+.jogos
+{
+  position: absolute;
+  display: block;
+  background-color: white;
+
+  //width: 320px;
+  //height: 250px;
+  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  
+  top: 100px;
+  right: 300px;
+}

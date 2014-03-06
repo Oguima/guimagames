@@ -1,3 +1,4 @@
+@charset "CP850";
 /*CSS base Bootstrap*/
 * {
   -webkit-box-sizing: border-box;
@@ -43,7 +44,7 @@ div {
 
 /* DEFAULT BUTTON */
 .btn {
-  background-color: #00698a;
+  background-color: #b22929;
   border: none;
   border-radius: 4px;
   color: white;
@@ -56,7 +57,7 @@ div {
   z-index: 1; }
 
 .btn .face {
-  background-color: #00a4d7;
+  background-color: #d33535;
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 4px;
@@ -73,6 +74,23 @@ div {
 
 .btn.active .face {
   background-position: bottom left; }
+
+.btn-shade {
+  background-color: rgba(153, 153, 153, 0.4); }
+
+.btn .face-shade {
+  background-color: #d33535;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 4px;
+  min-width: 36px;
+  min-height: 35px;
+  padding: 10px 15px;
+  position: relative;
+  top: -4px;
+  width: 100%;
+  height: 100%;
+  left: -4px; }
 
 .alert {
   background-color: #fcf8e3;
@@ -130,6 +148,7 @@ div {
 .shadows {
   @include box-shadow(0px 4px 5px #666, 2px 6px 10px #999);
 }*/
+/*Importante: no caso de usar transform, deve prefixar para cada transition... (rever)*/
 /*
 translate(20px)
 skew(-25deg);
@@ -165,6 +184,21 @@ direction
     }
 }
 */
+/* @author 14islands.com
+ * SASS mixins for future proof resolution media query
+ USO:
+ footer {
+  // only include 1x size image for 'non-retina' screens
+  @include if-max-resolution(1.49) {
+    background-image: url('img/footer-anchor@1x.png');
+  }
+  // only include 2x size image for 'retina' screens
+  @include if-min-resolution(1.5) {
+    background-image: url('img/footer-anchor@2x.png');
+    background-size: 10.5625rem 1.5625rem;
+  }
+}
+ */
 #close-button {
   display: none;
   position: absolute;
@@ -421,3 +455,34 @@ direction
   margin-left: -378;
   left: 15%;
   top: 0px; }
+
+.jumbotron {
+  background: url(../images/fundoWeb.png) no-repeat center; }
+
+.imglogo {
+  background-size: contain;
+  width: 30px;
+  height: 30px; }
+
+.logo:before {
+  background: url(../images/GuimaGamesLogo.jpg) no-repeat center;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 35px;
+  left: -61px;
+  display: block;
+  content: ''; }
+
+.jogos {
+  position: absolute;
+  display: block;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 100px;
+  right: 300px; }
