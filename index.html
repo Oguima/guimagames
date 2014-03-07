@@ -295,7 +295,7 @@ var helper = (function() {
 $(document).ready(function() {
   $('#disconnect').click(helper.disconnect);
   $('#loaderror').hide();
-  if ($('[data-clientid="526618883326-c99b4j1r70g5m9706pb15jdqvstmjaea.apps.googleusercontent.com"]').length > 0) {
+  if ($('[data-clientid="YOUR_CLIENT_ID"]').length > 0) {
     alert('This sample requires your OAuth credentials (client ID) ' +
         'from the Google APIs console:\n' +
         '    https://code.google.com/apis/console/#:access\n\n' +
@@ -323,6 +323,6 @@ function onSignInCallback(authResult) {
 
   ga('create', 'UA-48784240-1', 'guimagames.cloudcontrolled.com');
   ga('send', 'pageview');
-  
+
 </script>
 </html>
