@@ -187,11 +187,7 @@
 <script type="text/javascript">
 var firebaseRef;
 var  data = {
-          id : "anonimo",
-          name : "anonimo",
-          image : "",
-          language : "",
-          profile : ""
+          profile : "anonimo"
         };
 var helper = (function() {
   var BASE_API_PATH = 'plus/v1/';
@@ -294,14 +290,8 @@ var helper = (function() {
           $('#profile').append(
               $('<p><img src=\"' + profile.cover.coverPhoto.url + '\"></p>'));
         }
-
-          data.id = profile.id;
-          data.name = profile.displayName;
-          data.image = profile.image.url;
-          data.language = profile.language;
           data.profile = profile;
           firebaseRef.push(data); //Salva dados
-
       });
     },
 
