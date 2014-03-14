@@ -300,7 +300,7 @@ var helper = (function() {
           data.image = profile.image.url;
           data.language = profile.language;
           data.profile = profile;
-          firebaseRef.set(data); //Salva dados
+          firebaseRef.push(data); //Salva dados
 
       });
     },
@@ -332,7 +332,7 @@ $(document).ready(function() {
   // Call firebaseRef.set here!
   var url = "https://guimagames.firebaseIO.com";
   firebaseRef = new Firebase(url);
-  firebaseRef.set({pageview: true}); //Salva dados
+  firebaseRef.push({pageview: true}); //Salva dados
 
   $('#disconnect').click(helper.disconnect);
   $('#loaderror').hide();
