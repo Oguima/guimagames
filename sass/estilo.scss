@@ -179,16 +179,16 @@ $corazulbanca: rgb(42,165,212);
   width: 30px; height: 30px;
 }
 
-.logo:before
+.logo
 {
   background: url(../images/GuimaGamesLogo.jpg) no-repeat center;
   background-size: contain;
   width: 50px; height: 50px;
-  position: relative;
-  top: 35px;
-  left: -61px;
-  display: block;
-  content: '';
+  //position: relative;
+  //top: 35px;
+  //left: -61px;
+  display: inline;
+  //content: '';
 }
 
 .jogos
@@ -208,4 +208,9 @@ $corazulbanca: rgb(42,165,212);
   
   top: 100px;
   right: 300px;
+}
+
+.pull-right a
+{
+  padding: 9px;
 }

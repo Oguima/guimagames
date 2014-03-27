@@ -1,4 +1,3 @@
-@charset "CP850";
 /*CSS base Bootstrap*/
 * {
   -webkit-box-sizing: border-box;
@@ -74,23 +73,6 @@ div {
 
 .btn.active .face {
   background-position: bottom left; }
-
-.btn-shade {
-  background-color: rgba(153, 153, 153, 0.4); }
-
-.btn .face-shade {
-  background-color: #d33535;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 4px;
-  min-width: 36px;
-  min-height: 35px;
-  padding: 10px 15px;
-  position: relative;
-  top: -4px;
-  width: 100%;
-  height: 100%;
-  left: -4px; }
 
 .alert {
   background-color: #fcf8e3;
@@ -464,16 +446,12 @@ direction
   width: 30px;
   height: 30px; }
 
-.logo:before {
+.logo {
   background: url(../images/GuimaGamesLogo.jpg) no-repeat center;
   background-size: contain;
   width: 50px;
   height: 50px;
-  position: relative;
-  top: 35px;
-  left: -61px;
-  display: block;
-  content: ''; }
+  display: inline; }
 
 .jogos {
   position: absolute;
@@ -486,3 +464,6 @@ direction
   box-sizing: border-box;
   top: 100px;
   right: 300px; }
+
+.pull-right a {
+  padding: 9px; }
