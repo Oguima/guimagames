@@ -391,9 +391,7 @@ var helper = (function() {
 
 
         $('#profile').append(
-            $('<div class="thumbnail"><div class="text-center"><img src=\"' + profile.image.url + '\" class="img-circle"></img></div>'));
-        $('#profile').append(
-            $('<div class="caption"><h2>Olá ' + profile.displayName + '!</h2></div></div>' ));
+            $('<div class="thumbnail"><div class="text-center"><img src=\"' + profile.image.url + '\" class="img-circle"></img><div class="caption"><h2>Olá ' + profile.displayName + '!</h2></div></div></div>'));
             //'Tagline: ' +
             //profile.tagline + '<br />Sobre: ' + profile.aboutMe + '</p>'));
         /*if (profile.cover && profile.coverPhoto) {
