@@ -102,22 +102,112 @@
                 
                
 		 <div class="jumbotron">
+      
+      <div class="container-fluid">
+        
 
-			<!--login-->
-			<div id="gConnect" class="pull-right">
-				<button class="g-signin"
-					data-scope="https://www.googleapis.com/auth/plus.login"
-					data-requestvisibleactions="http://schemas.google.com/AddActivity"
-					data-clientId="526618883326-c99b4j1r70g5m9706pb15jdqvstmjaea.apps.googleusercontent.com"
-					data-callback="onSignInCallback"
-					data-theme="dark"
-					data-cookiepolicy="single_host_origin">
-				</button>
-			</div>
+      			<!--login-->
+      			<div id="gConnect" class="pull-right">
+      				<button class="g-signin"
+      					data-scope="https://www.googleapis.com/auth/plus.login"
+      					data-requestvisibleactions="http://schemas.google.com/AddActivity"
+      					data-clientId="526618883326-c99b4j1r70g5m9706pb15jdqvstmjaea.apps.googleusercontent.com"
+      					data-callback="onSignInCallback"
+      					data-theme="dark"
+      					data-cookiepolicy="single_host_origin">
+      				</button>
+      			</div>
+        
+
+        
+            <!--<h2>User's profile information</h2>-->
+            <div id="profile"></div>
+      </div>
+
+  <br/>
+      <div class="clearfix"></div>
 
 			<!-- Place this tag where you want the widget to render. -->
-			<div class="g-person" data-href="//plus.google.com/106356050626089179493" data-rel="author"></div>
-                        
+			<!--<div class="g-person" data-href="//plus.google.com/106356050626089179493" data-rel="author"></div>
+      -->
+                 
+      <!--Área de Jogos-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3">
+            <div class="thumbnail">
+              <div class="text-center">
+                <a href="http://vimorize.cloudcontrolled.com" data-tipo="memoria"><img src="images/vimorize2.png" class="img-circle"></img></a>
+              </div>
+              <div class="caption">
+                <h3><small>HTML:</small></h3>
+                <p>Vimorize - Memória</p>
+              </div>
+
+              <div class="text-center">
+                <a class="btn btn-danger btn-sm" href="http://vimorize.cloudcontrolled.com" role="button">Jogar</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="thumbnail">
+              <div class="text-center">
+                <a href="http://guimagames.net23.net/ClickClick.html" data-tipo="walkerboys"><img src="images/clickclick.png" class="img-circle"></img></a>
+              </div>
+              <div class="caption">
+                <h3><small>Unity:</small></h3>
+                <p>Click Click - Walkerboys #1</p>
+              </div>
+
+              <div class="text-center">
+                <a class="btn btn-danger btn-sm" href="http://guimagames.net23.net/ClickClick.html" role="button">Jogar</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add the extra clearfix for only the required viewport -->
+          <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
+
+          <div class="col-3">
+            <div class="thumbnail">
+              <div class="text-center">
+                <a href="http://memopizza.cloudcontrolled.com" data-tipo="aplicativo"><img src="images/memopizza2.png" class="img-circle"></img></a>
+              </div>
+              <div class="caption">
+                <h3><small>Aplicativo:</small></h3>
+                <p>Memopizza - Notas Homework #4</p>
+              </div>
+
+              <div class="text-center">
+                <a class="btn btn-danger btn-sm" href="http://memopizza.cloudcontrolled.com" role="button">Testar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+
+
+            <div class="thumbnail">
+              <div class="text-center">
+                <a href="https://build.phonegap.com/apps/400799/share" data-tipo="aplicativo"><img src="images/prancheta2.png" class="img-circle"></img></a>
+              </div>
+              <div class="caption">
+                <h3><small>Aplicativo:</small></h3>
+                <p>Prancheta Voleibol</p>
+                <p>Android:</p>
+                <a class="btn btn-danger btn-sm" href="https://build.phonegap.com/apps/400799/share" role="button">Download</a>
+                <p>Blackberry:</p>
+                <a class="btn btn-danger btn-sm" href="http://appworld.blackberry.com/webstore/content/35149887/?lang=pt_br" role="button">Download</a>
+            </div>
+
+              </div>
+            </div>
+            
+          </div>
+        </div>
+     </div>
 				
 		</div> <!--<div class="jumbotron">-->
 
@@ -140,8 +230,7 @@
 				information retrieved from Google for the given user.</p>
 				<button id="disconnect" >Disconnect your Google account from this app</button>
         -->
-				<!--<h2>User's profile information</h2>-->
-				<div id="profile"></div>
+				
 
 				<!--<h2>User's friends that are visible to this app</h2>
 				<div id="visiblePeople"></div>-->
@@ -157,48 +246,12 @@
 			</div>
             
 
-      <!--Área de Jogos-->
-      <!--<div class="container-fluid">-->
-        <div class="row">
-          <div class="col-3">
-            <h1><small>HTML:</small></h1>
-            <a href="http://vimorize.cloudcontrolled.com" data-tipo="memoria"><img src="images/vimorize.png" class="img-responsive"></img><br/>Vimorize - Memória</a>
-          </div>
-
-          <div class="col-3">
-            <h1><small>Unity:</small></h1>
-            <a href="http://guimagames.net23.net/ClickClick.html" data-tipo="walkerboys">Click Click - Walkerboys #1</a>
-          </div>
-
-          <!-- Add the extra clearfix for only the required viewport -->
-          <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
-
-          <div class="col-3">
-            <h1><small>Aplicativo:</small></h1>
-            
-            <a href="http://memopizza.cloudcontrolled.com" data-tipo="aplicativo"><img src="images/memopizza.jpg" class="img-responsive"></img><br/>Memopizza - Notas Sencha Touch Homework #4</a>
-            
-          </div>
-
-          
-
-          <div class="col-3">
-            <h1><small>Aplicativo:</small></h1>
-
-            <div class="row">
-            <a href="https://build.phonegap.com/apps/400799/share" data-tipo="aplicativo"><img src="images/prancheta.png" class="img-responsive"></img><br/>Prancheta Voleibol - Android / Blackberry</a>
-            <br>
-            Download Android, Windows...: <a href="https://build.phonegap.com/apps/400799/share">https://build.phonegap.com/apps/400799/share</a><br>
-            Blackberry: <a href="http://appworld.blackberry.com/webstore/content/35149887/?lang=pt_br">http://appworld.blackberry.com/webstore/content/35149887/?lang=pt_br</a>
-            </div>
-          </div>
-        </div>
-     <!--</div> -->
+     
   <!--<div class="row">&nbsp;</div>-->  
   <hr>
     <footer>
       <div class="pull-right">
-        Última Atualização 25/03/2014<br>
+        Última Atualização 01/04/2014<br>
         <a href="http://www.facebook.com/Oguima"><img src="images/faviconsface.png" class="img-responsive"></img></a>
         <a href="http://twitter.com/Oguima"><img src="images/faviconstwitter.png" class="img-responsive"></img></a>
         <a href="http://guimagames.wordpress.com"><img src="images/faviconswp.png" class="img-responsive"></img></a>
@@ -323,15 +376,29 @@ var helper = (function() {
           $('#profile').append(profile.error);
           return;
         }
+
+        /*
+
+            <div class="thumbnail">
+              <div class="text-center">
+                <a href="http://vimorize.cloudcontrolled.com" data-tipo="memoria"><img src="images/vimorize2.png" class="img-circle"></img></a>
+              </div>
+              <div class="caption">
+                <h3><small>HTML:</small></h3>
+                <p>Vimorize - Memória</p>
+              </div>
+        */
+
+
         $('#profile').append(
-            $('<p><img src=\"' + profile.image.url + '\"></p>'));
+            $('<div class="thumbnail"><div class="text-center"><img src=\"' + profile.image.url + '\" class="img-circle"></img></div>'));
         $('#profile').append(
-            $('<h2>Olá ' + profile.displayName + '!</h2>' ));
+            $('<div class="caption"><h2>Olá ' + profile.displayName + '!</h2></div></div>' ));
             //'Tagline: ' +
             //profile.tagline + '<br />Sobre: ' + profile.aboutMe + '</p>'));
-        if (profile.cover && profile.coverPhoto) {
+        /*if (profile.cover && profile.coverPhoto) {
           $('#profile').append(
-              $('<p><img src=\"' + profile.cover.coverPhoto.url + '\"></p>'));
+              $('<p><img src=\"' + profile.cover.coverPhoto.url + '\"></p>'));*/
         }
           data.profile = profile;
           firebaseRef.push(data); //Salva dados
