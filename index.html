@@ -28,8 +28,8 @@
   <meta name="description" content="Jogos - Guima Games. rafaelguima@outlook.com / @Oguima">
   <meta name="author" content="Rafael Guimarães dos Santos">
 
-  <meta name="HandheldFriendly" content="True">
-  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!--<meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes" />-->
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -517,7 +517,6 @@ $(document).ready(function() {
   // Call firebaseRef.set here!
   var url = "https://guimagames.firebaseIO.com";
   firebaseRef = new Firebase(url);
-  firebaseRef.push({pageview: true}); //Salva dados
 
   $('#disconnect').click(helper.disconnect);
   $('#loaderror').hide();
