@@ -233,3 +233,35 @@
   color: black;  
 }
 
+/*
+  font-family: 'Monofett', cursive; BOMBOM
+  font-family: 'Didact Gothic', sans-serif; DOCES FINOS
+  font-family: 'Julius Sans One', sans-serif; SIMPLES
+*/
+.titulo
+{
+  text-align: center;
+  font-family: 'Monofett', cursive;
+  font-size: 2em;
+  color: white;
+}
+
+.titulo2
+{
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2em;
+  color: white;
+}
+
+.texto
+{
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+  color: white;
+}
+
+section.box.widget.find 
+{
+  background-color:black;
+}
